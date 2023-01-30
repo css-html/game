@@ -37,7 +37,7 @@ export const AddCell: FC<IAddCellProps> = ({
   >
     <input
       className="c_addCell__type"
-      type="phone"
+      type="tel"
       placeholder={placeholder}
       required
       {...props}
