@@ -1,0 +1,56 @@
+/* storybook
+-------------------------------------------------------------*/
+[class*='sb-'] {
+  .c_app {
+    min-height: auto;
+    position: relative;
+  }
+
+  .icons {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-auto-rows: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+
+    > * {
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+      background-color: black;
+    }
+
+    img {
+      max-width: 2rem;
+    }
+  }
+
+  .sbdocs-wrapper {
+    padding: 0 1rem;
+  }
+
+  h1.sbdocs-title {
+    display: none;
+  }
+
+  .docs-story {
+    transform: translateZ(0);
+  }
+
+  .sb-show-main.sb-main-padded {
+    padding: 0;
+  }
+
+  .docblock-argstable-body {
+    [type='radio'] {
+      appearance: auto;
+    }
+
+    button,
+    .rejt-tree,
+    [name='iconRight'] {
+      display: none;
+    }
+  }
+}

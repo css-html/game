@@ -1,0 +1,182 @@
+@import './storybook.scss';
+
+/* vars
+-------------------------------------------------------------*/
+:root {
+  --white-000: #ffffff;
+  --black-000: #0e0c10;
+  --black-100: #101823;
+  --red-000: #ede8e8;
+  --red-100: #f34352;
+  --green-000: #c5fe60;
+}
+
+/* breakpoints
+-------------------------------------------------------------*/
+// --max-374: 374px;
+// --min-375: 375px;
+// --max-567: 567px;
+// --min-568: 568px;
+// --max-767: 767px;
+// --min-768: 768px;
+// --max-991: 991px;
+// --min-992: 992px;
+// --max-1199: 1199px;
+// --min-1200: 1200px;
+// --max-1399: 1399px;
+// --min-1400: 1400px;
+
+/* font-face
+-------------------------------------------------------------*/
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'RobotoMono';
+  src: url('../fonts/RobotoMono/RobotoMono__400.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'RobotoMono';
+  src: url('../fonts/RobotoMono/RobotoMono__500.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'RobotoFlex';
+  src: url('../fonts/RobotoFlex/RobotoFlex__400.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'ArchivoBlack';
+  src: url('../fonts/ArchivoBlack/ArchivoBlack__400.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Anton';
+  src: url('../fonts/Anton/Anton__400.woff2') format('woff2');
+}
+
+/* global
+-------------------------------------------------------------*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html {
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overscroll-behavior: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+img {
+  flex: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+
+  &:not([src]) {
+    visibility: hidden;
+  }
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  user-select: none;
+  fill: currentColor;
+  pointer-events: none;
+  display: inline-flex;
+}
+
+a {
+  text-decoration: none;
+
+  &[href^='tel'] {
+    @media (pointer: fine) {
+      pointer-events: none;
+    }
+  }
+
+  &[href='javascript:void(0);'] {
+    cursor: default;
+  }
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0;
+}
+
+input,
+select,
+button,
+textarea {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  border-radius: 0;
+  box-shadow: none;
+  appearance: none;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: bottom;
+  background-color: transparent;
+}

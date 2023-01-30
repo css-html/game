@@ -1,0 +1,62 @@
+/* .c_countdown
+-------------------------------------------------------------*/
+$r: '.c_countdown';
+
+// block
+//-----------------------------------------------------------
+#{$r} {
+  display: flex;
+  align-items: center;
+  color: var(--red-000);
+
+  @media (max-width: 767px) {
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    gap: 1rem;
+  }
+
+  // element
+  //---------------------------------------------------------
+  &__item {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &Time {
+      font-size: 4.5rem;
+      line-height: 85%;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+
+      @media (max-width: 767px) {
+        font-size: 3.5rem;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 4.5rem;
+      }
+    }
+
+    &Title {
+      color: rgba(237, 232, 232, 0.75);
+      font-size: 0.75rem;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+
+  &__colon {
+    display: flex;
+    font-size: 2rem;
+    transform: translateY(-25%);
+  }
+
+  // modifier
+  //---------------------------------------------------------
+}
+
+// influence
+//-----------------------------------------------------------

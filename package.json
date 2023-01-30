@@ -1,0 +1,88 @@
+{
+  "name": "@freshcut/ui-v2",
+  "version": "0.1.21",
+  "dependencies": {
+    "@rollup/plugin-image": "^2.1.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "babel-loader": "8.2.4",
+    "customize-cra": "^1.0.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.8",
+    "react-dom": "^17.0.2",
+    "react-lottie": "^1.2.3",
+    "react-scripts": "4.0.3",
+    "react-svg-to-image": "^3.0.0",
+    "sass": "^1.45.0",
+    "storybook": "^6.5.9",
+    "storybook-formik": "^2.4.2",
+    "storybook-react": "^3.2.16",
+    "swr": "^1.2.2",
+    "typescript": "^4.6.3",
+    "web-vitals": "^1.0.1"
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "rollup -c &&  cp -R ./src/fonts/ ./build/src/fonts/ && node post-rollup.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "prettier": "prettier -w '**/*.{ts,tsx,js}'",
+    "clean": "rm package-lock.json || true && rm -rf ./node_modules",
+    "bootstrap": "npm install --legacy-peer-deps"
+  },
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "types": "build/index.d.ts",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "UI components library",
+  "source": "index.ts",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/node-logger": "^6.5.9",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.5.9",
+    "@types/react": "^17.0.2",
+    "@types/react-lottie": "^1.2.6",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.1",
+    "rollup": "^2.61.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.31.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
