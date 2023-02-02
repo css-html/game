@@ -21,7 +21,7 @@ export const Banner_v3 = ({}: IBanner_v3Props) => {
           <Countdown date={new Date('February 28, 2023 12:00:00')} />
           <AddCell
             v3
-            placeholder="Add your cell # to be in the know"
+            placeholder="Add your cell # to know"
             submitTitle="Add me to Waitlist"
             submitIcon={<Icon.IconChevronRight />}
           />
