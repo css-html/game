@@ -1,4 +1,4 @@
-import { AddCell, Banner, Icon } from '../../bits';
+import { Banner, Countdown, DownloadApp, Icon } from '../../bits';
 
 export interface IBanner_v1Props {}
 
@@ -6,13 +6,9 @@ export const Banner_v1 = ({}: IBanner_v1Props) => {
   return (
     <Banner
       v1
+      countdown={<Countdown date={new Date('February 28, 2023 12:00:00')} />}
       caption={
         <>
-          <span>
-            Are you
-            <br />
-            boosted?
-          </span>
           <span>
             Ever win without
             <br />a pocket sage?
@@ -20,14 +16,7 @@ export const Banner_v1 = ({}: IBanner_v1Props) => {
         </>
       }
       actionTitle="Let’s find out:"
-      actionElement={
-        <AddCell
-          v1
-          placeholder="Add your cell # to know"
-          submitTitle="Add me to Waitlist"
-          submitIcon={<Icon.IconChevronRight />}
-        />
-      }
+      actionElement={<DownloadApp />}
       list={[
         {
           icon: <Icon.IconClock />,

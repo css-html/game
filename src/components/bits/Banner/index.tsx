@@ -15,6 +15,7 @@ export interface IBannerProps {
   list?: ListItem[];
   caption?: ReactNode;
   agreement?: ReactNode;
+  countdown?: ReactNode;
   actionTitle?: string;
   actionElement?: ReactNode;
 }
@@ -27,6 +28,7 @@ export const Banner: FC<IBannerProps> = ({
   list,
   caption,
   agreement,
+  countdown,
   actionTitle,
   actionElement,
 }) => (
@@ -40,6 +42,7 @@ export const Banner: FC<IBannerProps> = ({
     )}
   >
     <div className="c_banner__content">
+      {countdown && <div className="c_banner__countdown">{countdown}</div>}
       {caption && <h1 className="c_banner__caption">{caption}</h1>}
       {actionElement && (
         <div className="c_banner__action">
